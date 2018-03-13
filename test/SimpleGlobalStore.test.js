@@ -35,6 +35,16 @@ describe('SimpleGlobalStore', () => {
 
       expect(SimpleGlobalStore.data).to.deep.equal({});
     });
+
+    it('notifies the subscriber', () => {
+      const callBack = sinon.spy();
+      SimpleGlobalStore.update({ key: 'value ' });
+
+      SimpleGlobalStore.addChangeListener(callBack);
+      SimpleGlobalStore.clear();
+
+      expect(callBack).to.have.been.called;
+    });
   });
 
   describe('#update', () => {

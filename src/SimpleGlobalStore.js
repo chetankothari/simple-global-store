@@ -35,6 +35,7 @@ class SimpleGlobalStore extends EventEmitter {
 
   clear() {
     this._data = {};
+    this._emitChange();
   }
 }
 
