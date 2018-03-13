@@ -1,6 +1,6 @@
 {
   "name": "simple-global-store",
-  "version": "1.0.0-beta",
+  "version": "1.1.0-beta",
   "description": "Simple global store as event emitter",
   "author": "Chetan Kothari <mail@chetankothari.in>",
   "main": "build/index.js",
