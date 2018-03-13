@@ -91,7 +91,7 @@ describe('SimpleGlobalStore', () => {
   });
 
   describe('#removeChangeListener', () => {
-    it('adds subscriber for store updates', () => {
+    it('removes subscriber from store updates', () => {
       const callBack = sinon.spy();
 
       SimpleGlobalStore.addChangeListener(callBack);
