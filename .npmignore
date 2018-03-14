@@ -1,1 +1,9 @@
 src
+coverage
+.idea
+test
+.bebelrc
+.eslintignore
+.eslintrc
+yarn.lock
+yarn-error.log
